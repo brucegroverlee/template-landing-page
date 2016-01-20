@@ -1,0 +1,330 @@
+/* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-ExtraBold.ttf");
+  font-weight: 800;
+}
+body {
+  color: #575656;
+  font-size: 16px;
+  font-family: 'Raleway', 'arial';
+}
+.view {
+  min-height: 300px;
+}
+#view-0 {
+  min-height: 64px;
+  background-color: #dedede;
+}
+#view-1 {
+  background-color: #99ff76;
+}
+#view-2 {
+  background-color: #84d867;
+}
+#view-3 {
+  background-color: #71b858;
+}
+#view-4 {
+  background-color: #5f9b4a;
+}
+footer {
+  color: #e0dfdf;
+  background-color: #414141;
+  min-height: 300px;
+}
+.header {
+  background-color: #fff;
+  height: 64px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+}
+.header-mobile {
+/*border 1px solid blue;*/
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo {
+/*border 1px solid red;*/
+  order: 1;
+  margin-left: 1rem;
+  line-height: 64px;
+}
+.header-btn-nav {
+  order: 2;
+  border: 0px;
+  background-color: #fff;
+  margin-right: 1rem;
+}
+.header-menu-navbar {
+  background-color: #fff;
+}
+.header-menu-list {
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+.header-menu-list-show {
+  height: 280px;
+}
+.header-menu-list-item {
+/*border 1px solid red;*/
+  width: 100%;
+  padding: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+.header-menu-list-item:hover {
+  background-color: #f1efef;
+}
+@media (min-width: 768px) {
+  #view-0 {
+    min-height: 80px;
+    background-color: #dedede;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 80px;
+    transition: all 0.3s ease;
+  }
+  .behind-header {
+    height: 80px;
+  }
+  .header-logo {
+    line-height: 80px;
+  }
+  .header-btn-nav {
+    display: none;
+  }
+  .header-menu-list {
+    height: 80px;
+    display: flex;
+  }
+  .header-menu-list-item {
+    display: inline-block;
+  }
+}
