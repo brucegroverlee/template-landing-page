@@ -1,7 +1,7 @@
 var gulp = require('gulp')
 var webserver = require('gulp-webserver')
-var sass = require('gulp-sass')
-var copy = require('gulp-file-copy')
+var stylus = require('gulp-stylus')
+var shell = require('gulp-shell')
 
 var publicPath = '_dist/public/'
 var frontendPath = 'src/frontend/'
@@ -17,9 +17,9 @@ var config = {
     watch: frontendPath + '*.html',
     copy: publicPath + ''
   },
-  scss: {
-    main: frontendPath + 'scss/bundle.scss',
-    watch: frontendPath + 'scss/*.scss',
+  styl: {
+    main: frontendPath + 'styl/bundle.styl',
+    watch: frontendPath + 'styl/*.styl',
     bundle: publicPath + 'css'
   },
   js: {
@@ -40,14 +40,18 @@ gulp.task('copy-html', function () {
 })
 
 gulp.task('build-css', function () {
-  gulp.src(config.scss.main)
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(config.scss.bundle))
+  gulp.src(config.styl.main)
+    .pipe(stylus())
+    .pipe(gulp.dest(config.styl.bundle))
 })
 
 gulp.task('build-js', function () {
-  gulp.src(config.js.main)
-  console.log('build-js')
+  console.log('build-js start')
+  var script = 'browserify -t [ babelify --presets [ es2015 ] ] '+ config.js.main + ' > '+ config.js.bundle + '/bundle.js'
+  console.log(script)
+  gulp.src(config.js.main, {read: false})
+   .pipe(shell([script]))
+  console.log('build-js done')
 })
 
 gulp.task('build-frontend', [
@@ -60,7 +64,7 @@ gulp.task('build-frontend', [
 gulp.task('watch', function () {
   gulp.watch(config.fonts.watch, ['copy-fonts'])
   gulp.watch(config.html.watch, ['copy-html'])
-  gulp.watch(config.scss.watch, ['build-css'])
+  gulp.watch(config.styl.watch, ['build-css'])
   gulp.watch(config.js.watch, ['build-js'])
 })
 
