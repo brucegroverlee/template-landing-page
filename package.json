@@ -1,0 +1,31 @@
+{
+  "name": "template-landing-page",
+  "version": "0.0.1",
+  "description": "This is a template for lanfing page\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[d\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucegroverlee/template-landing-page.git"
+  },
+  "keywords": [
+    "template",
+    "landing",
+    "page"
+  ],
+  "author": "bruce grover lee <brucegrover.lee@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucegroverlee/template-landing-page/issues"
+  },
+  "homepage": "https://github.com/brucegroverlee/template-landing-page#readme",
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "gulp": "^3.9.0",
+    "gulp-file-copy": "0.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
