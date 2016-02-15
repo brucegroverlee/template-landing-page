@@ -1,0 +1,30 @@
+commit 1a4eac5f48be6c825016c540a171d1af1bf39a7b
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Wed Jan 20 17:31:59 2016 -0500
+
+    navbar works ok
+
+commit 56357e6164b7d398fb4135a613b35ad66bfab28d
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Wed Jan 20 16:22:45 2016 -0500
+
+    the navbar doesnt works fine
+
+commit 4d3c3cc4c87709bc93fe95f0b3a1377d8d7a0c34
+Merge: 4290f92 9b12a28
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Wed Jan 20 13:49:56 2016 -0500
+
+    erge remote-tracking branch 'origin/master'
+
+commit 4290f922ffa7a622cacf4632262a6cf8bd9d4b90
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Wed Jan 20 13:48:28 2016 -0500
+
+    there're problems with SASS
+
+commit 9b12a28b8d100004f94c45d9c6ffd84156d1a4e3
+Author: Bruce Grover Lee <brucegrover.lee@gmail.com>
+Date:   Wed Jan 20 09:18:53 2016 -0500
+
+    Initial commit
